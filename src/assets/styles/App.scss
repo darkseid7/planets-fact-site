@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+$font-antonio: 'Antonio', sans-serif;
+$font-spartan: 'Spartan', sans-serif;
+
+body {
+  margin: 0;
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+#root{
+  background-color: #070724;
+}
+.app{
+  background-color: #070724;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.bg-stars{
+  // height: 80rem;
+  background-position: center;
+  background-size: cover;
+}
+

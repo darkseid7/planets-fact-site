@@ -1,0 +1,168 @@
+@import './App.scss';
+
+.planet-overview{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.planet-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planet-img{
+ padding: 8rem 9rem 0 10rem;;
+}
+
+.planet-description{
+    max-width: 350px;
+    color: #fff;
+}
+
+.planet-name{
+    margin: 120px 0 30px 0;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: $font-antonio;
+    font-style: normal;
+
+}
+
+.planet-information, .planet-source{
+    font-size: 14px;
+    font-family: $font-spartan;
+    font-style: normal;
+    line-height: 25px;
+}
+
+.planet-buttons-info{
+    padding: 2rem 0;
+    display: grid;
+    
+}
+
+.btn-active {
+    background-color: #419ebb !important;
+}
+
+.planet-buttons-info > button{
+    width: 350px;
+    height: 48px;
+    margin: 8px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-spartan;
+    background-color: transparent;
+    border: 1px solid #38384f;
+    border-radius: 0%;
+    color: #fff;
+    cursor: pointer;
+    text-align: start;
+    transition: 0.3s;
+}
+
+.planet-buttons-info > button:hover{
+    background-color: #38384f;
+}
+
+.planet-buttons-info > button > span{
+    padding: 0 25px 0 28px;
+}
+
+
+.planet-facts-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 60px 0;
+}
+
+.planet-fact{
+    padding: 23px;
+    margin: 0 15px;
+    color: #fff;
+    border: 2px solid #38384f;
+    width: 255px;
+}
+
+.planet-fact > p{
+    font-size: 11px;
+    font-family: $font-spartan;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+
+.planet-fact > span{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    font-family: $font-antonio;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    header{
+        display: block;
+    }
+
+    .planet-container{
+        display: block;
+    }
+
+    .planet-img-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    .planet-name{
+        margin: 0 0 30px 0;
+        font-size: 48px;
+    }
+    
+    .planet-information{
+        font-size: 11px;
+    }
+
+    .planet-description{
+        padding-top: 120px;
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .planet-description-container{
+        width: 339px;
+    }
+
+    .planet-buttons-info{
+        width: 281px;
+        display: block;
+    }
+
+    .planet-buttons-info > button{
+        width: 281px;
+    }
+
+    .planet-fact {
+        width: 164px;
+        padding: 10px;
+    }
+
+    .planet-fact > p{
+        font-size: 8px;
+    }
+    
+    .planet-fact > span{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 664px) {
+
+    .header-menu-list{
+        display: none;
+    }
+}
