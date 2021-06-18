@@ -10,8 +10,15 @@ header {
 }
 
 .header-logo-text{
+    font-family: $font-antonio;
+    font-size: 28px;
+    color: #fff;
     padding: 0 0 0 20px;
     text-transform: uppercase;
+}
+
+.header-logo-movile{
+    display: none;
 }
 
 .header-menu-list {
@@ -42,7 +49,7 @@ header {
     transition: 0.3;
 }
 
-.header-menu-items > li > a:hover{
+.header-menu-items a:hover{
     color: #38384f;
 }
 
@@ -51,6 +58,13 @@ hr {
     opacity: 0.2;
     border-bottom: 1px;
 }
+
+.topnav, .icon {
+    display: none;
+}
+
+
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -71,3 +85,123 @@ hr {
     }
 
 }
+
+@media only screen and (max-width: 664px) {
+
+    // start responsive menu
+
+    .menu{
+        display: none;
+    }
+
+    .menu-responsive {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo-movile{
+        display: block;
+    }
+
+    .header-logo-text{
+        text-align: start;
+        padding: 0px !important;
+        font-size: 28px;
+    }
+
+    a.icon {
+        display: block;
+    }
+
+    .topnav{
+        display: block;
+    }
+
+    .topnav.responsive {
+        width: 100%;
+        position: absolute;
+        background-color: #070724;
+        height: 114vh;
+        z-index: 1;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive .menu-responsive-items {
+      display: block;
+    }
+
+    .menu-responsive-items{
+        display: none;
+        padding: 20px;
+    }
+
+    .menu-responsive-item{
+        padding: 31px 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #38384f;
+    }
+
+    .menu-item-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .circle{
+        margin-right: 30px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mercury{
+        background-color: #DEF4FC;
+    }
+
+    .venus{
+        background-color: #F7CC7F;;
+    }
+
+    .earth{
+        background-color: #545BFE;
+    }
+    
+    .mars{
+        background-color: #FF6A45;
+    }
+
+    .jupiter{
+        background-color: #ECAD7A;
+    }
+
+    .saturn{
+        background-color: #FCCB6B;
+    }
+
+    .uranus{
+        background-color: #65F0D5;
+    }
+
+    .neptune{
+        background-color: #497EFA;
+    }
+
+    .menu-item-name a {
+        color: #fff;
+        font-family: $font-spartan;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    // end responsive menu
+
+}
+

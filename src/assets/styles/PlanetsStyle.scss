@@ -162,7 +162,75 @@
 
 @media only screen and (max-width: 664px) {
 
-    .header-menu-list{
+    .planet-buttons-info{
         display: none;
+
     }
+
+    .planets-buttons-info-mobile{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .planets-buttons-info-mobile a{
+        padding: 20px 0;
+        color: #979797;
+        font-family: $font-spartan;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .active-mobile{
+        color: #fff !important;
+        border-bottom: 3px solid #419EBB;
+    }
+
+    .planets-buttons-info-mobile a:hover {
+        border-bottom: 3px solid #419EBB;
+    }
+
+    .overview-pearator{
+        margin: 0;
+    }
+
+    .planet-img{
+        width: 200px;
+        padding: 5rem 0;
+    }
+
+    .planet-description{
+        padding: 0;
+    }
+
+    .planet-description-container{
+        text-align: center;
+    }
+
+    .planet-name {
+        font-size: 40px;
+    }
+
+    .planet-information {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .planet-facts-container{
+        display: block;
+    }
+
+    .planet-fact{
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
 }
+

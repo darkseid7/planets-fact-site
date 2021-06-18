@@ -14,6 +14,13 @@ const Mercury = () =>{
     
     return (
       <div className="planet-overview">
+        <div className="planets-buttons-info-mobile">
+          <a href="" className='active-mobile'>Overview</a>
+          <a href="">Internal structure</a>
+          <a href="">surface geology</a>
+          
+        </div>
+        <hr className="overview-pearator"/>
         <div className="planet-container">
           <div className="planet-img-container">
             <img className="planet-img" src={imgMercury} alt="lol" />
@@ -31,7 +38,6 @@ const Mercury = () =>{
                 </a>
               </span>
             </div>
-
             <div className="planet-buttons-info">
               <button type="button" className="btn-active">
                 <span> 01 </span> overview
@@ -45,6 +51,7 @@ const Mercury = () =>{
             </div>
           </div>
         </div>
+
         <div className="planet-facts-container">
           <div className="planet-fact">
             <p>rotation time</p>
